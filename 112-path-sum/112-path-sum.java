@@ -23,7 +23,7 @@ class Solution {
       if(root!=null){
           cSum+=root.val;
           if(cSum==tSum&&root.left==null&&root.right==null) return true; 
-      }
+                    }
         else return false;
         boolean c1=result(root.left,tSum,cSum);
         boolean c2=result(root.right,tSum,cSum);
