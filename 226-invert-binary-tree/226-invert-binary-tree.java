@@ -16,9 +16,9 @@
 class Solution {
     public TreeNode invertTree(TreeNode root) {
           if(root==null) return null;
-         TreeNode temp=root.right;
-        root.right=invertTree(root.left);
-        root.left=invertTree(temp);
+         TreeNode temp=root.right;   // to store unchnaged right child of the root
+        root.right=invertTree(root.left); // changing the right child with left
+        root.left=invertTree(temp);       // changing the left child with the orginal right child i.e unchanged right child stored in temp;
         return root;
     }
 }
