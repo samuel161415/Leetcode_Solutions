@@ -17,7 +17,6 @@ class Solution {
     List<List<Integer>> list=new ArrayList<>();
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         int h=height(root);
-        System.out.println("height"+h);
         for(int i=1;i<=h;i++){
             list.add(result(root,i,new ArrayList<>()));
         }
@@ -35,8 +34,7 @@ class Solution {
         if(level==1) l.add(root.val);
         if(level>1){
             result(root.left,level-1,l);
-            result(root.right,level-1,l);
-            
+            result(root.right,level-1,l);     
         }
         return l;
      
