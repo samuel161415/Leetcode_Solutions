@@ -14,7 +14,6 @@ class Solution {
           }
             else if(map.containsKey(psum[i]-k)) count+=map.get(psum[i]-k);
             map.put(psum[i], map.getOrDefault(psum[i], 0) + 1);
-            //map.put(psum[i],i);
         }
         return count;
     }
