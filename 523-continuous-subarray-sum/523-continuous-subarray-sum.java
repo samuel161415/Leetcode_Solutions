@@ -19,20 +19,4 @@ class Solution {
         
     }
 }
-/*
-
-        /*
-        
-        [23,2,4,6,7], k = 6
-       [0,23,25,] 
-        
-        
-        int end=psum.length-1;
-        int slow=end-2;
-        while(end>1){
-            if(psum[end]%k==0||(psum[end]-psum[slow])%k==0) return true;
-            end--;
-            slow--;
-        }
-        return false;*/
         
