@@ -9,14 +9,16 @@ class Solution {
         
         for(int i=1;i<nums.length;i++){ 
             psum += nums[i];
-            if((psum%k==0)||(hash.containsKey(psum%k)&&(i-hash.get(psum%k)>1))) return true;
-            if(!hash.containsKey(psum%k))
-               hash.put(psum%k,i);
+            if(psum%k==0)
+               return true;
+               
+            if(hash.containsKey(psum%k)){
+                if (i-hash.get(psum%k)>1) return true;
+            }
+            else
+                hash.put(psum%k,i);
         }
-        
         return false;
-        
-        
     }
 }
         
