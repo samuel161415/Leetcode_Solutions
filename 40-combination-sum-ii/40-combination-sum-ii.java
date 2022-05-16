@@ -4,10 +4,10 @@ class Solution {
         Arrays.sort(candidates);
         
         helper(candidates,target,0,new ArrayList<>());
-        HashSet<List<Integer>> set=new LinkedHashSet<>();
-        set.addAll(list);
-        list.clear();
-        list.addAll(set);
+        // HashSet<List<Integer>> set=new LinkedHashSet<>();
+        // set.addAll(list);
+        // list.clear();
+        // list.addAll(set);
         return list;
         
     }
@@ -21,7 +21,6 @@ class Solution {
             }
         }
         if(target==0) {
-           // Collections.sort(l);
             list.add(new ArrayList<>(l));
         }
     }
