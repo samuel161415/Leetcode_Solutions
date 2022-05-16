@@ -4,17 +4,13 @@ class Solution {
         Arrays.sort(candidates);
         
         helper(candidates,target,0,new ArrayList<>());
-        // HashSet<List<Integer>> set=new LinkedHashSet<>();
-        // set.addAll(list);
-        // list.clear();
-        // list.addAll(set);
         return list;
         
     }
     public void helper(int[] candidates,int target,int idx,List<Integer> l){
         if(target>0){
             for(int i=idx;i<candidates.length;i++){
-                if (i > idx && candidates[i] == candidates[i-1]) continue;
+                if (i > idx && candidates[i] == candidates[i-1]) continue; // no repetion is allowed
                 l.add(candidates[i]);
                 helper(candidates,target-candidates[i],i+1,l);
                 l.remove(l.size()-1);
