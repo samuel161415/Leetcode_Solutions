@@ -8,8 +8,8 @@ class Solution {
           if(i==m-1&&j==n-1) return 1;
           
           if(dp[i][j]==0) 
-              return dp[i][j]=totalPath(i+1,j,dp,m,n)+ totalPath(i,j+1,dp,m,n);
+               dp[i][j]=totalPath(i+1,j,dp,m,n)+ totalPath(i,j+1,dp,m,n);
     
-          else return dp[i][j];
+           return dp[i][j];
       }
 }
