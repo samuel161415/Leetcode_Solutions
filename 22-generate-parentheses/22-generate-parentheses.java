@@ -1,6 +1,5 @@
 class Solution {
     public List<String> generateParenthesis(int n) {
-        String str="()";
         List<String> list=new ArrayList<>();
         combination("",0,0,list,n);
         return list;
