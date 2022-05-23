@@ -23,7 +23,7 @@ class Solution {
         System.out.println("sb "+sb.toString()+" D "+D);
   if(pos==length) {
       l.add(sb.toString());
-    return ;
+   // return ;
   }
 else {
    int value=Character.getNumericValue(D.charAt(pos));
