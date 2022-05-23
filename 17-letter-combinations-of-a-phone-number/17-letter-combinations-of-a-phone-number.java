@@ -21,10 +21,8 @@ class Solution {
     }
     public void dfs(int pos,int length,LinkedList<String> l,StringBuilder sb,String D){
         System.out.println("sb "+sb.toString()+" D "+D);
-  if(pos==length) {
-      l.add(sb.toString());
-   // return ;
-  }
+  if(pos==length) l.add(sb.toString());
+  
 else {
    int value=Character.getNumericValue(D.charAt(pos));
    String characters=list.get(value);
