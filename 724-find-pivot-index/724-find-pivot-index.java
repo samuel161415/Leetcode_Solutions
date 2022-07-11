@@ -7,7 +7,9 @@ class Solution {
         }
         
         for(int i=0;i<nums.length;i++){
-            if(suffix-2*prefix==nums[i]) return i;
+           // if(suffix-2*prefix==nums[i]) return i;
+            suffix=suffix-nums[i];
+            if(suffix==prefix) return i;
             prefix+=nums[i];
         }
         return -1;
