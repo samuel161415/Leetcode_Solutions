@@ -14,9 +14,10 @@
  * }
  */
 class Solution {
+    // This is using recursion
     public void flatten(TreeNode root) {
         List<Integer> list=new ArrayList<>();
-        helper(root,list);
+        dfs(root,list);
        
         TreeNode current=root;
         for(int i=1;i<list.size();i++){
@@ -28,10 +29,10 @@ class Solution {
         }
         
     }
-    public void helper(TreeNode root,List<Integer> list){
+    public void dfs(TreeNode root,List<Integer> list){
         if(root==null) return ;
         list.add(root.val);
-        helper(root.left,list);
-        helper(root.right,list);
+        dfs(root.left,list);
+        dfs(root.right,list);
     }
 }
