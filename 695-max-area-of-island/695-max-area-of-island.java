@@ -13,7 +13,7 @@ class Solution {
     }
     public int helper(int[][]grid,int row,int col){
         if(row<0||row==grid.length||col<0||col==grid[0].length||grid[row][col]==0) return 0;
-        grid[row][col]=0;
+        grid[row][col]=0; // it prevents using same element more than once and removes visited boolean data
         return (1+helper(grid,row+1,col)+helper(grid,row-1,col)+helper(grid,row,col+1)+helper(grid,row,col-1));
         
         
