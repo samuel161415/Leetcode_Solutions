@@ -10,18 +10,18 @@ class Employee {
 class Solution {
     int total=0;
     public int getImportance(List<Employee> employees, int id) {
-        helper(employees,0,id);
+        Map<Integer,Employee> map=new HashMap<>(); // used to access in o(1) and prevents iterating in helper function
+       for(Employee e:employees){
+           map.put(e.id,e);
+       }
+        helper(map,id);
         return total;
     }
-    public void helper(List<Employee> e,int idx,int id){
-        if(idx==e.size()) return;
-        if(e.get(idx).id==id){
-            total+=e.get(idx).importance;
-            
-            for(int i=0;i<e.get(idx).subordinates.size();i++){
-                helper(e,0,e.get(idx).subordinates.get(i));
-            }
-        }
-        helper(e,idx+1,id);        
+    public void helper(Map<Integer,Employee> map,int id){
+        Employee emp=map.get(id);
+        total+=emp.importance;
+        for(int i:emp.subordinates){
+            helper(map,i);
+        }   
     }
 }
