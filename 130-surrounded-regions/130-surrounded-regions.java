@@ -32,3 +32,6 @@ class Solution {
         }       
     }
 }
+// Idea is for every border if it contains 'O' then all connected 'O' with it will be marked as '*'. This
+// star values latter will be zero because it is connected to border. the other 'O' that are surounded by 'X'
+// is latter converted to 'X'
