@@ -43,3 +43,6 @@ class Solution {
             return (char)(count + '0');
         }
     }
+// idea is if it is E and have any adjecent mine replace it's value with no of adjecent M's and return
+// if no adjecent mine replace E with B and recurse to it's E adjecents
+// if it encounters number or B return
