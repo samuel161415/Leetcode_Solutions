@@ -30,3 +30,5 @@ class Solution {
         
     }
 }
+// this is very similar question to surround area problem. convert all 1s connected to mariginal 1 to 0 and finally 
+// count the 1s and return thier count
