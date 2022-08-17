@@ -14,7 +14,6 @@
  * }
  */
 class Solution {
-    TreeNode node=null;
     public TreeNode lcaDeepestLeaves(TreeNode root) {
         int maxDepth=getWidth(root)-1;
         System.out.println(maxDepth);
