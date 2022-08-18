@@ -38,7 +38,6 @@ class Solution {
             }
             else{
                 newNode.neighbors.add(visited[nNode.val]);
-                continue;
             }
         }
         return newNode;
