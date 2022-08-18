@@ -19,7 +19,7 @@ class Node {
 */
 
 class Solution {
-    Node[] visited=new Node[101];
+    Node[] visited=new Node[101]; // i used Node type array for line 40 code;
     public Node cloneGraph(Node node) {
         Arrays.fill(visited,null);
         
