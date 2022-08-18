@@ -33,7 +33,6 @@ class Solution {
             }
             double average=level_sum/size;
             res.add(average);
-            //res.add((double)level_sum/size);
         }
         return res;
     }
