@@ -34,3 +34,4 @@ class Solution {
       
     }
 }
+// I used prioritQueue because it orders according to size and don't need to follow each endex 
