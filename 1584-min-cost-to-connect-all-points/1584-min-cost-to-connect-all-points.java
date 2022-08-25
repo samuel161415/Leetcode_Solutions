@@ -29,3 +29,4 @@ class Solution {
         return res;
     }
 }
+// I Used prime algorithm that uses dfs. cordinates are presented with index of points as they are unique
