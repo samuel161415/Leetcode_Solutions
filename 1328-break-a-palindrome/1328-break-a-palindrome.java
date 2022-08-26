@@ -42,3 +42,7 @@ class Solution {
             return true;
         }
 }
+
+// idea is iterating over strings  and  replace the front char  with chacter starting from a to it. 
+//If it generates non palindrome return else  go on until last element
+// if last element can't generate non palindrome with char less than it, replace it with the next char i.e last+1 char
