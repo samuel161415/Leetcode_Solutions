@@ -31,4 +31,5 @@ public class moreRam {
  
     }
 }
-// It is gready and idea is sort by
+// It is gready and idea is sort by the array of the first and check if the capacity is less than or equal to k
+// if so add else return
