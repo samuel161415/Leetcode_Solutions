@@ -16,3 +16,4 @@ class Solution {
         return diff;
     }
 }
+//https://leetcode.com/problems/smallest-range-ii/
