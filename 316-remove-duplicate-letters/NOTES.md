@@ -1,1 +1,1 @@
-​
+​The idea is simple. we will have Map that contains the frequency of characters. Then we will have stack and boolean visited and this stack is filled with characters based on comparison. If the current element is not visited(not found in stack) then if the stacks top element is greater than current char remove that char from stack and and make visited of its value to false and push the current element in stack and make its value in visited =true. But if that top stack element's frequency is one simply push the current element to stack and visited=true;
