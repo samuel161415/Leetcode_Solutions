@@ -23,3 +23,7 @@ class Solution {
         return res;
     }
 }
+// idea is simple.initialize two arrays with val 1.
+//check from left to right one array and right to left the other arrayif the previous val is less than or not. if it is less, increment the current value from previous 
+// one. else leave;
+// Finally pich the maximum value from the same idx and add the total array and return res;
