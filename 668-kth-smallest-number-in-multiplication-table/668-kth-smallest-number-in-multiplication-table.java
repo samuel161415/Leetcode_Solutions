@@ -16,3 +16,4 @@ class Solution {
         return left;
     }
 }
+// Idea is base on https://www.youtube.com/watch?v=43ZWq7qf9xc
